@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   publish:
+    if: github.repository == 'niruvai/mac-screen-recorder'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
