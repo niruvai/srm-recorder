@@ -1,0 +1,36 @@
+name: Publish Release
+
+# Builds are made privately and delivered to the 'dist' branch of this repository.
+# This workflow turns each delivery into a GitHub Release with the DMG attached.
+on:
+  push:
+    branches: [dist]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: github.repository == 'niruvai/srm-recorder'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dist
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION="$(tr -d '[:space:]' < VERSION)"
+          TAG="v$VERSION"
+          DMG="$(ls *.dmg | head -1)"
+          echo "Publishing $TAG with $DMG"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$DMG" --clobber
+            gh release edit "$TAG" --notes-file RELEASE_NOTES.md
+          else
+            gh release create "$TAG" "$DMG" --target main \
+              --title "SRM Recorder $TAG" --notes-file RELEASE_NOTES.md --latest
+          fi
