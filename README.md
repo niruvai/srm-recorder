@@ -6,7 +6,7 @@
 
 **SRM Recorder is a free, lightweight screen recorder for Mac. Record your screen with system audio and your voice.**
 
-<sub>Formerly “SRM Recorder”. Same app, new name.</sub>
+<sub>Formerly “Screen Recorder”. Same app, new name.</sub>
 
 [![Download](https://img.shields.io/github/v/release/niruvai/srm-recorder?label=Download&style=for-the-badge&color=e5484d)](https://github.com/niruvai/srm-recorder/releases/latest)
 &nbsp;
