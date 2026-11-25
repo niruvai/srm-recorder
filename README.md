@@ -1,24 +1,32 @@
 <div align="center">
 
-<img src="assets/icon.png" width="128" height="128" alt="Screen Recorder icon">
+<img src="assets/icon.png" width="128" height="128" alt="SRM Recorder icon">
 
-# Screen Recorder for macOS
+# SRM Recorder for Mac
 
-**A free, lightweight, native screen recorder for Mac. Record your screen with system audio and your voice.**
+**SRM Recorder is a free, lightweight screen recorder for Mac. Record your screen with system audio and your voice.**
 
-[![Download](https://img.shields.io/github/v/release/niruvai/mac-screen-recorder?label=Download&style=for-the-badge&color=e5484d)](https://github.com/niruvai/mac-screen-recorder/releases/latest)
+<sub>Formerly “SRM Recorder”. Same app, new name.</sub>
+
+[![Download](https://img.shields.io/github/v/release/niruvai/srm-recorder?label=Download&style=for-the-badge&color=e5484d)](https://github.com/niruvai/srm-recorder/releases/latest)
 &nbsp;
 ![macOS](https://img.shields.io/badge/macOS-13%2B-555?style=for-the-badge&logo=apple)
 &nbsp;
 ![Size](https://img.shields.io/badge/size-~1.3%20MB-555?style=for-the-badge)
 &nbsp;
-[![Downloads](https://img.shields.io/github/downloads/niruvai/mac-screen-recorder/total?style=for-the-badge&color=555)](https://github.com/niruvai/mac-screen-recorder/releases)
+[![Downloads](https://img.shields.io/github/downloads/niruvai/srm-recorder/total?style=for-the-badge&color=555)](https://github.com/niruvai/srm-recorder/releases)
 
-**[⬇️ Download the latest version](https://github.com/niruvai/mac-screen-recorder/releases/latest)**
+**[⬇️ Download the latest version](https://github.com/niruvai/srm-recorder/releases/latest)**
 
 </div>
 
 ---
+
+## 🎬 What is SRM Recorder?
+
+**SRM Recorder** is a native screen recorder for macOS that records the Mac's own sound, which the built-in recorder can't do, along with your voice from a microphone. It's about 1.3 MB, needs no drivers or extra software, and is free.
+
+🌐 **Official page:** [nirobislam.com/shop/srm-recorder](https://www.nirobislam.com/shop/srm-recorder) · 📖 [Read the full introduction](https://www.nirobislam.com/blog/srm-recorder-mac)
 
 ## ✨ Features
 
@@ -40,8 +48,8 @@
 
 ## 📥 Install
 
-1. Download **`ScreenRecorder-x.y.z.dmg`** from the [latest release](https://github.com/niruvai/mac-screen-recorder/releases/latest).
-2. Open the DMG and drag **Screen Recorder** into **Applications**.
+1. Download **`SRMRecorder-x.y.z.dmg`** from the [latest release](https://github.com/niruvai/srm-recorder/releases/latest).
+2. Open the DMG and drag **SRM Recorder** into **Applications**.
 3. **The first time you open it:** right-click the app and choose **Open**. On macOS 15 and later, go to **System Settings → Privacy & Security** and click **Open Anyway**.
    <sub>macOS asks this once because the app is not distributed through the Mac App Store.</sub>
 4. Allow **Screen Recording** when asked (System Settings → Privacy & Security → Screen & System Audio Recording), then click **Quit & Reopen** in the app.
@@ -62,7 +70,7 @@ You don't need to install anything else. Everything the app uses is already part
 <details>
 <summary><b>The app says “Screen Recording permission needed”</b></summary>
 
-Turn on **Screen Recorder** in System Settings → Privacy & Security → Screen & System Audio Recording, then click **Quit & Reopen** in the app. If an old entry is stuck, run this in Terminal, then reopen the app and allow it again:
+Turn on **SRM Recorder** in System Settings → Privacy & Security → Screen & System Audio Recording, then click **Quit & Reopen** in the app. If an old entry is stuck, run this in Terminal, then reopen the app and allow it again:
 
 ```
 tccutil reset ScreenCapture com.local.ScreenRecorder
@@ -89,7 +97,7 @@ Keep **Settings → Video & Audio → “Mix system audio and microphone into on
 
 ## 🐞 Feedback & support
 
-Found a bug or have an idea? [Open an issue](https://github.com/niruvai/mac-screen-recorder/issues) or email **[nirob@nirobislam.com](mailto:nirob@nirobislam.com)**.
+Found a bug or have an idea? [Open an issue](https://github.com/niruvai/srm-recorder/issues) or email **[nirob@nirobislam.com](mailto:nirob@nirobislam.com)**.
 
 ## 👨‍💻 Developer
 
@@ -116,5 +124,5 @@ Web Developer & Video Editor, Bogura, Bangladesh
 ---
 
 <div align="center">
-<sub>© 2026 Md. Nurunnabi Islam Nirob. Screen Recorder is free to download and use. All rights reserved.</sub>
+<sub>© 2026 Md. Nurunnabi Islam Nirob. SRM Recorder is free to download and use. All rights reserved.</sub>
 </div>

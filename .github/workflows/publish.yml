@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   publish:
-    if: github.repository == 'niruvai/mac-screen-recorder'
+    if: github.repository == 'niruvai/srm-recorder'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,5 +32,5 @@ jobs:
             gh release edit "$TAG" --notes-file RELEASE_NOTES.md
           else
             gh release create "$TAG" "$DMG" --target main \
-              --title "Screen Recorder $TAG" --notes-file RELEASE_NOTES.md --latest
+              --title "SRM Recorder $TAG" --notes-file RELEASE_NOTES.md --latest
           fi
